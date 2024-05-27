@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: hsl(293, 82%, 35%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    font-size: 16px;
+    width: 500px;
+    padding: 3.5em 2.5em;
+    border-radius: 0.6em;
+    box-shadow: 0 1.2em 3em rgba(0, 4, 52, 0.2);
+}
+
+.search-container {
+    display: flex;
+    margin: 1.2em 0 1.2em 0;
+    justify-content: space-between;
+}
+
+.container input,
+.container button {
+    font-size: 1.25em;
+    outline: none;
+    border: none;
+    border-radius: 0.4em;
+}
+
+.container input {
+    width: 250px;
+    border: 1px solid #bdbdbf;
+    padding: 0.6em;
+}
+
+.container button {
+    width: 55%;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 1.2em;
+    padding: 0.7em;
+    cursor: pointer;
+}
+
+.search-container button {
+    background-color: hsl(293, 82%, 35%);
+}
+
+.ran-fact-btn {
+    background-color: hsl(128, 73%, 42%);
+}
+
+.ran-fact-btn:hover {
+    background-color: hsl(128, 73%, 32%);
+}
+
+.ran-fact-btn:active {
+    background-color: hsl(128, 73%, 22%);
+}
+
+.search-container button:hover {
+    background-color: hsla(293, 82%, 25%);
+}
+
+.search-container button:active {
+    background-color: hsla(293, 82%, 15%);
+}
+
+.ran-fact-btn {
+    width: 100%;
+}
+
+.fact {
+    background-color: #fff;
+    box-shadow: 0 0 1.2em rgba(0, 4, 52, 0.1);
+    margin: 3em auto 0 auto;
+    padding: 2.8em 1.8em;
+    border-radius: 0.6em;
+    border: none;
+    border-bottom: 0.6em solid hsl(293, 82%, 35%);
+    display: none;
+}
+
+.fact h2 {
+    font-size: 2.8em;
+    color: #181a34;
+}
+
+.fact p {
+    font-size: 1.15em;
+    font-weight: 400;
+    color: #50526b;
+    line-height: 1.8em;
+    text-align: justify;
+    margin-top: 0.8em;
+}
+
+p.msg {
+    text-align: center;
+    font-weight: 500;
+    color: #181a34;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        margin-top: 20%;
+        padding: 2.0em 1.5em;
+    }
+
+    .search-container input {
+        width: 80%;
+    }
+}

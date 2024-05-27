@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Number Trivia App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Number/Date Trivia</h1>
+        <div class="search-container">
+            <input type="number" placeholder="Number (0 - 300)" id="num" min="0" max="300">
+            <button id="get-num-fact-btn">Get Number Fact</button>
+        </div>
+        <button class="ran-fact-btn" id="ran-num-btn">Get Random Number Fact</button>
+        <div class="search-container">
+            <input type="text" placeholder="Date (Ex: 4/6)" id="date">
+            <button id="get-date-fact-btn">Get Date Fact</button>
+        </div>
+        <button class="ran-fact-btn" id="ran-date-btn">Get Random Date Fact</button>
+        <div class="fact"></div>
+    </div>
+    
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
